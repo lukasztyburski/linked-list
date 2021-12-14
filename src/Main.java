@@ -1,5 +1,3 @@
-import java.util.Optional;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -22,18 +20,18 @@ public class Main {
 //        list.push(-4);
 //        list.push(17);
 
-        list.unshift(41);
-        list.unshift(2);
-        list.unshift(-4);
-        list.unshift(17);
+        list.pushFront(41);
+        list.pushFront(2);
+        list.pushFront(-4);
+        list.pushFront(17);
 
 
         try {
-            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.shift());
-            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.shift());
-            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.shift());
-            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.shift());
-            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.shift());
+            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.popFront());
+            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.popFront());
+            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.popFront());
+            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.popFront());
+            System.out.println("List size = " + list.getSize() + "\nElement value: " + list.popFront());
             System.out.println("List size = " + list.getSize());
         } catch (EmptyListException e) {
             e.printStackTrace();

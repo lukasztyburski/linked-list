@@ -13,7 +13,7 @@ public class DoublyLinkedList<E> {
     }
 
     // insert value at back
-    public void push(E data) {
+    public void pushBack(E data) {
         if (isEmpty()) {
             head = new Node<>(data, null, null);
 
@@ -39,7 +39,7 @@ public class DoublyLinkedList<E> {
     }
 
     // remove value at back and return it
-    public E pop() throws EmptyListException {
+    public E popBack() throws EmptyListException {
         if (!isEmpty()) {
             Node<E> result;
             Node<E> lastNode = head;
@@ -65,7 +65,7 @@ public class DoublyLinkedList<E> {
     }
 
     // remove value at front and return it
-    public E shift() throws EmptyListException {
+    public E popFront() throws EmptyListException {
         if (!isEmpty()) {
             Node<E> result = head;
             head = result.getNext();
@@ -77,7 +77,7 @@ public class DoublyLinkedList<E> {
     }
 
     // insert value at front
-    public void unshift(E data) {
+    public void pushFront(E data) {
         if (isEmpty()) {
             head = new Node<>(data, null, null);
         } else {
