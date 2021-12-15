@@ -1,5 +1,7 @@
 # linked-list
-Simple implementation for doubly linked list in Java with basic functionality:
+*Task from exercism.org*
+
+Simple implementation for doubly linked list in Java with basic functionality: 
 - pushBack
 - popBack
 - pushFront
